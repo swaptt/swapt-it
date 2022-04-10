@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path("sherlockholmes/", admin.site.urls),
+    path("swapt_admin/", admin.site.urls),
     path("", include("toolkit.urls")),
 ]
 

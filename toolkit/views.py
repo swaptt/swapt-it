@@ -74,8 +74,9 @@ def fullscan(request):
                 )
                 p_fullscan.start()
                 p_fullscan.join()
+                print(p_fullscan)
             # nmap.nmap_script(ip, user_name, function_name)
-
+	
         except ValueError:
             return render(
                 request,

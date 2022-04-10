@@ -29,16 +29,16 @@ class PDF(FPDF):
         self.ln(3)
 
         # User
-        uw = self.get_string_width(u[0]) + 2
-        self.set_x((230 - uw + 1))
-        self.set_text_color(1, 1, 3)
-        self.set_font("Arial", "I", 9)
-        self.cell(uw, -20, u[0])
-        uw = self.get_string_width(u[1]) + 2
-        self.set_x((204 - uw + 1))
-        self.set_text_color(1, 1, 3)
-        self.set_font("Arial", "I", 9)
-        self.cell(uw, -10, u[1])
+        #uw = self.get_string_width(u[0]) + 2
+        #self.set_x((230 - uw + 1))
+        #self.set_text_color(1, 1, 3)
+        #self.set_font("Arial", "I", 9)
+        #self.cell(uw, -20, u[0])
+        #uw = self.get_string_width(u[1]) + 2
+        #self.set_x((204 - uw + 1))
+        #self.set_text_color(1, 1, 3)
+        #self.set_font("Arial", "I", 9)
+        #self.cell(uw, -10, u[1])
         # self.ln(20)
 
         # Report Type
