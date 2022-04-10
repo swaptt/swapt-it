@@ -59,8 +59,7 @@
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center" id="home">
     <h1 class="w3-jumbo" style="color:#ffb54d"><span class="w3-hide-small">SWAPT - "Be Aware, Be Secure"</span></h1>
-    <p></p>
-<br><br><br><br><br><br>
+    <p></p><br><br>
 
 <div class="side-block w3-center">
     <a href="{% url 'fullscan' %}">
@@ -85,9 +84,12 @@
 </div><br><br><br><br>
 <div class="side-block w3-center">
     <a href="{% url 'sshbruteforce' %}">
-        <img src="{% static 'toolkit/images/ssh_brute.png' %}" class="scans" style="position: relative;left:40px;" width="85" height="85">
+        <img src="{% static 'toolkit/images/ssh_brute.png' %}" class="scans" style="position: relative;left:30px;" width="85" height="85">
     </a>
-     <a href="{% url 'rdpbruteforce' %}">
+    <a href="{% url 'webapp' %}">
+        <img src="{% static 'toolkit/images/webapp.png' %}"  class="scans" style="position:relative; right:-15px;" width="85" height="85">
+    </a>
+    <!-- <a href="{% url 'rdpbruteforce' %}">
         <img src="{% static 'toolkit/images/rdp-brute.png' %}"  class="scans" style="position: relative;left:40px;" width="85" height="85">
     </a>
      <a href="{% url 'linux' %}">
@@ -95,22 +97,23 @@
     </a>
      <a href="{% url 'windows' %}">
         <img src="{% static 'toolkit/images/microsoft.png' %}"  class="scans" style="position: relative;left:50px;" width="85" height="85">
-    </a>
+    </a>-->
 </div>
 <div class="side-block w3-center" >
-    <a href="{% url 'sshbruteforce' %}" target="_blank"><p class="w3-medium scans" style="position:relative;left:100px; top:10px;"><span class="w3-hide-small ">SSH</span> Dictionary Attack</p></a>
-    <a href="{% url 'rdpbruteforce' %}" target="_blank"><p class="w3-medium scans" style="position:relative;left:35px; top:10px;"><span class="w3-hide-small ">RDP</span> Bruteforce</p></a>
+    <a href="{% url 'sshbruteforce' %}" target="_blank"><p class="w3-medium scans" style="position:relative;left:70px;top:10px;"><span class="w3-hide-small ">SSH Dictionary Attack</p></a>
+    
+    <a href="{% url 'webapp' %}" target="_blank"><p class="w3-medium scans" style="position:relative;right:40px; top:10px;"><span class="w3-hide-small ">WEB Application</p></a>
+</div><br><br><br><br><br><br>
+    <!--<a href="{% url 'rdpbruteforce' %}" target="_blank"><p class="w3-medium scans" style="position:relative;left:35px; top:10px;"><span class="w3-hide-small ">RDP</span> Bruteforce</p></a>
     <a href="{% url 'linux' %}" target="_blank"><p class="w3-medium scans" style="position:relative;left:0px; top:10px;"><span class="w3-hide-small ">Linux</span> Section</p></a>
     <a href="{% url 'nightmare' %}" target="_blank"><p class="w3-medium scans" style="position:relative;left:-30px; top:10px;"><span class="w3-hide-small ">Windows</span> Section</p></a>
-</div><br><br><br><br><br>
+<br><br><br><br><br>
 <div class="side-block w3-center">
     <a href="{% url 'webapp' %}">
         <img src="{% static 'toolkit/images/webapp.png' %}"  class="scans" style="position:relative;right: 310px" width="85" height="85">
     </a>
-</div>
-<div class="side-block w3-center" >
-    <a href="{% url 'webapp' %}" target="_blank"><p class="w3-medium scans" style="position:relative;top:15px; right: 310px"><span class="w3-hide-small ">WEB</span> Application</p></a>
-</div>
+</div>-->
+
 </header>
 
 
