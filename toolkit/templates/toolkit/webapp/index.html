@@ -4,7 +4,7 @@
 {% load static %}
 <title>
     {% block title %}
-        WebApplications - RedTeam Toolkit
+        WebApplications - SWAPT
     {% endblock %}
 </title>
 <link rel="stylesheet" type="text/css" href="{% static "toolkit/css/webapp_menu.css" %}" media="all"/>
@@ -48,24 +48,6 @@
             </p></a></label>
       </div>
     </div>
-
-      <div class="tabs">
-      <div class="tab">
-        <input  id="chck1">
-        <label class="tab-label" for="chck1">
-            <a href="{% url 'apache_cve_41773' %}"><p class="w3-medium scans" style="position:relative;">
-                Apache Path Traversal [ CVE-2021-41773 ]
-            </p></a></label>
-      </div>
-    </div>
-
-      <div class="tab">
-        <input type="checkbox" id="chck2">
-        <label class="tab-label" for="chck2">Other</label>
-        <div class="tab-content"><p class="w3-medium scans" style="position:relative;">
-          Under Maintenance</p></a>
-        </div>
-      </div>
 
     </div>
   </div>
